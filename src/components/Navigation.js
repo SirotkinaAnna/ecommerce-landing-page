@@ -13,7 +13,7 @@ function Navigation({ handleClick }) {
             </div>
         </div>
         <div className='grid content-center h-5/6  md:mx-0 md:w-1/2'>
-            <div className=' text-5xl md:text-7xl p-10 m-auto md:mx-40 md:mt-10 border-2 border-white w-5/6'>
+            <div className=' text-4xl md:text-7xl p-10 m-auto md:mx-40 md:mt-10 border-2 border-white w-5/6'>
                 <p>IMMERSIVE</p>
                 <p>EXPERIENCES</p>
                 <p>THAT DELIVER</p>
