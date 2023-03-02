@@ -1,0 +1,62 @@
+div a {
+    margin-right: 30px;
+}
+
+div {
+    font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+nav {
+    background: no-repeat url('../images/desktop/image-hero.jpg');
+    background-size: cover;
+    width: 100%;
+
+}
+
+/* nav {
+    height: 650px;
+} */
+.onhover {
+    visibility: hidden;
+}
+
+
+
+.myLink:hover+.onhover {
+    visibility: visible;
+}
+
+h1 {
+    font-family: 'Alata', sans-serif;
+}
+
+.myDiv:hover+.myText {
+
+    color: black;
+
+}
+
+.myText:hover+.myDiv {
+    opacity: 0.5;
+}
+
+.menu {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+@media (max-width: 800px) {
+
+    nav {
+        background-image: url('../images/mobile/image-hero.jpg');
+    }
+
+    /*
+    nav img {
+        height: 1300px;
+    } */
+
+}

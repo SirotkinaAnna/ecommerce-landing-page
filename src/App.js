@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Navigation from "./components/Navigation";
+import { useState } from "react";
+import Modal from "./components/Modal";
+import MainContent from "./components/MainContent";
+import OurCreations from "./components/Creations";
+import Footer from "./components/Footer";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    const [show, setShow] = useState(false);
+    const handleClick = () => {
+        setShow(!show)
+    }
+    return <div>
+        <Navigation handleClick={handleClick} />
+        {show && <Modal onClose={handleClick} />}
+        <MainContent />
+        <OurCreations />
+        <Footer />
     </div>
-  );
 }
-
 export default App;
